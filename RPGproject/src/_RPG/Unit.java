@@ -18,7 +18,7 @@ abstract public class Unit {
 	int defend;
 	int speed;
 	int item;
-//	Element element;
+	Element element;
 
 	public Unit(String name, int hp, int mp, int power, int defend, int speed) {
 		super();
