@@ -8,7 +8,10 @@ public class GameMove extends Game_Manager_TEST {
 
 	Scanner sc = new Scanner(System.in);
 	Random rd = new Random();
-
+	GameMove(Unit u){
+		this.u = u;
+	}
+	Unit u;
 	GameBattle b = new GameBattle();
 
 	void monsterCheck(int Y, int X) {
@@ -19,7 +22,10 @@ public class GameMove extends Game_Manager_TEST {
 			if (boss) {
 				m.boss();
 			}
-//			m.element = Element_List.eList.elementlist.get(rd.nextInt(3));
+			System.out.println(m.UnitInfo());
+			m.element = Element_List.instance.elementlist.get(rd.nextInt(3));
+			m.element.changePower(m);
+			System.out.println(m.UnitInfo());
 			b.Battle(player, m);
 		}
 	}

@@ -12,7 +12,7 @@ public class PlayerPrist extends Unit {
 	public String toString() {
 		return name + " hp : " + hp + "/" + maxHp + "";
 	}
-	
+
 	@Override
 	void skill(Unit u) {
 		double rdAtk = (rd.nextInt(20) - 20) / 100.0 + 1; // 공격력 80~100% 회복
@@ -28,10 +28,5 @@ public class PlayerPrist extends Unit {
 		}
 		System.out.printf("%s의 체력 [%d/%d]\n", u.name, u.hp, u.maxHp);
 	}
-
-
-		
-	
-
 
 }

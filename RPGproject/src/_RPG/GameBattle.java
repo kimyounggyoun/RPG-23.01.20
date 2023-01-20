@@ -20,6 +20,7 @@ public class GameBattle extends Game_Manager_TEST {
 	
 	void Battle(Unit p, Unit m) {
 		
+		
 		if (boss) {
 			System.out.println("[보스 몬스터를 만났다]");
 		} else {

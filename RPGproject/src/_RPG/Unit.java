@@ -30,6 +30,7 @@ abstract public class Unit {
 		this.power = power;
 		this.defend = defend;
 		this.speed = speed;
+
 	}
 
 	void attack(Unit unit) {
@@ -71,12 +72,12 @@ abstract public class Unit {
 		maxHp += 10;
 		maxMp += 5;
 	}
-	
+
 	void boss() {
 		name = "Boss_" + name;
-		power+=40;
-		defend+=40;
-		speed+=20;
+		power += 40;
+		defend += 40;
+		speed += 20;
 		maxHp *= 2;
 		hp = maxHp;
 		maxMp *= 2;

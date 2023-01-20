@@ -6,6 +6,16 @@ interface Element {
 	Unit changePower(Unit u);
 }
 
+class None implements Element {
+
+	@Override
+	public Unit changePower(Unit u) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+
 class Water implements Element {
 
 	@Override
@@ -25,7 +35,6 @@ class Water implements Element {
 //	Unit testmon = m.monsterList.get(1);
 //	testmon.element = 
 //}
-
 
 class Ground implements Element {
 

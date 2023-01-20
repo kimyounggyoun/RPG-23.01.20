@@ -10,9 +10,9 @@ public class Game_Manager_TEST {
 	Random rd = new Random();
 
 	static GameFiled f = new GameFiled();
-	static GameMove m = new GameMove();
-	Unit player;
-
+	static Unit player;
+	static GameMove m = new GameMove(player);
+	
 	int[] mY = { 1, -1, 0, 0 }; // 플레이어 이동 -> 화면이동 기준
 	int[] mX = { 0, 0, 1, -1 };
 	int yx[];
